@@ -1,0 +1,197 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif
+}
+
+body {
+
+    background-color: black;
+
+}
+
+.logo {
+    flex: 1;
+}
+
+
+.logo-pic {
+
+    height: 150px;
+    width: 150px;
+}
+
+.navbar {
+
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    position: sticky;
+    right: 0;
+
+}
+
+
+.logo-navbar {
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    align-content: center;
+    z-index:2;
+    opacity: 75%;
+
+}
+
+.threelines-menu {
+
+
+    display: none;
+    width:100px;
+    height:100px;
+
+}
+
+
+.button-home,.button-menu,.button-about,.button-contact {
+    font-size: 75px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+
+.background-pic {
+
+    min-width:50%;
+    object-fit: cover;
+    z-index: 1;    
+
+}
+
+
+.slogan1 {
+    font-size: 90px;
+    margin: auto;
+}
+
+.see-menu {
+    font-size: 40px;
+    margin:auto;
+    background-color: green;
+    color: white;  
+    width:fit-content;
+    padding:0 20px 0px 20px;
+}
+
+.slogan-seemenu {
+    margin:auto;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top:600px;
+    z-index:1;
+}
+
+footer {
+
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    background-color:black;
+    
+    
+
+}
+
+.footer1 {
+
+    width: 100%;
+    display: flex;
+    
+}
+
+.footer2 {
+
+    width: 100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size:25px; 
+    color:green;
+    align-items: center;
+
+}
+
+.social-links,.contact-info,.opening-times   {
+
+    flex: 1;
+    line-height: 1;
+    padding:10px;
+}
+
+hr {
+
+    margin: 0;
+    padding:0;
+}
+
+@media (  max-width: 756px )  {
+
+
+
+    .button-home,.button-menu,.button-about,.button-contact {
+        display:none;
+    }
+
+    .threelines-menu {
+
+        width:100px;
+        height:100px;
+        display:flex;
+
+    }
+
+
+
+}
+
+@media (  max-width: 480px )  {
+    .footer1{
+        flex-direction: column;
+    }
+    .logo-pic {
+
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .threelines-menu {
+
+        width:70px;
+        height:70px;
+        display:flex;
+    
+    }
+    .slogan1 {
+        font-size: 70px;
+        margin: auto;
+    }
+    
+    .see-menu {
+        font-size: 30px;
+
+}
+}
