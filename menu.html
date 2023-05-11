@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>MENU</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="images/favicon (1).ico">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Amatic SC", sans-serif
+    }
+
+    body {
+
+background-color: black;}
+
+.logo-pic{
+            height:150px;
+            width: 150px;
+        }
+
+
+        .navbar{
+            justify-content: flex-end;
+        font-size: 55px;
+    }
+
+    .slogan1{
+            font-size: 75px;
+        }
+
+        @media (max-width: 630px) {
+            .logo-navbar{
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar{
+            justify-content: center;
+        }
+    }
+
+        @media (max-width: 480px) {
+            .footer1 {
+                flex-direction: column;
+            }
+
+            .logo-pic {
+
+                height: 100px;
+                width: 100px;
+
+            }
+
+
+        .navbar{
+            justify-content: center;
+        font-size:30px;
+    }
+            }
+
+            .slogan1 {
+                font-size: 70px;
+                margin: auto;
+            }
+
+            .see-menu {
+                font-size: 30px;
+
+            }
+        
+        @media (max-width:360px) {
+            .slogan1{
+                width:100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+        }
+    }
+
+@media (max-width:330px) {
+    .logo-pic {
+
+
+height: 70px;
+width: 70px;
+
+}
+
+
+.navbar{
+justify-content: center;
+flex-wrap: wrap;
+}
+}
+        @media (max-width:222px) {
+          
+            }
+            .slogan1{
+            font-size: 55px;
+        }
+            .see-menu{
+                font-size: 30px;
+            }
+
+    @media (min-width:980px) {
+        #menu{
+            width:100%;
+            background-color: black;
+        }
+        
+
+    }
+
+    @media (max-width: 480px) {
+            .footer1 {
+                flex-direction: column;
+            }
+        }
+</style>
+
+<body>
+    <div class="logo-navbar" style="    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    align-content: center;
+    z-index:2;
+    opacity: 75%;">
+        <div class="logo" style="flex: 1;">
+            <img class="logo-pic" src="images/logo-white.jpg">
+        </div>
+
+        <div class="navbar" style="display: flex;
+        background-color: black;
+        align-items: center;
+        flex: 1;
+        position: sticky;
+        right: 0;">
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-home" href="index.html">HOME
+            </a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-menu"
+                href="menu.html">MENU</a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-about"
+                href="about.html">ABOUT</a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-contact"
+                href="contact.html">CONTACT</a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Start Content -->
+    <div id="home" class="w3-content">
+
+        <!-- Menu -->
+        <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+            <div style="display:flex; justify-content:space-between;margin-bottom:10px;margin-top:0;align-items:center;">
+            <img style="width:150px;height:150px" src="images/package.jpg" alt=""></IMG>
+            <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
+            <div style="width:150px"></div>
+            </div>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="#pizza">
+                    <div class="w3-third w3-padding-large w3-red">Pizza</div>
+                </a>
+                <a href="#pasta">
+                    <div class="w3-third w3-padding-large w3-hover-red">Pasta</div>
+                </a>
+                <a href="#starters">
+                    <div class="w3-third w3-padding-large w3-hover-red">Starters</div>
+                </a>
+            </div>
+
+            <div id="pizza" class="w3-container w3-white w3-padding-32">
+                <div>
+                <img style="width:130px;height:130px;border-radius: 100%;float:left;margin:10px 20px 10px 10px;" src="images/pizza 1.jpg" alt="">
+                <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                </div>
+                <hr>
+                <div>
+                <img style="width:130px;height:130px;border-radius: 100%;float:left;margin:10px 20px 10px 10px;" src="images/pizza 2.jpg" alt="">
+                <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                </div>
+                <hr>
+                <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+
+                <hr>
+                <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+
+                <hr>
+                <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-`round">Hot!</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+            </div>
+
+            <h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
+            <div class="w3-container w3-white w3-padding-32">
+
+                <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+                <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+
+                <hr>
+                <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+                <p class="w3-text-grey">Ravioli filled with cheese</p>
+
+                <hr>
+                <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+            </div>
+
+            <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
+            <div class="w3-container w3-white w3-padding-32">
+
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
+                    <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                <p class="w3-text-grey">Ask the waiter</p>
+
+                <hr>
+                <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+                <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+
+                <hr>
+                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+            </div>
+        </div>
+
+        <!-- End Content -->
+    </div>
+</body>
+<hr>
+<footer style="    color: white;
+font-size: 30px;
+text-align: left;
+background-color:black;">
+
+
+    <div class="footer1" style="width: 100%;display: flex;">
+
+        <div class="social-links" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
+            <p style="text-decoration: underline;">Follow us on Social Media:</p>
+
+            <p><a href="https://www.facebook.com/BoxingHarePizzeria/"><img
+                        style="background-color: white; border-radius:12%;width: 40px;" src="images/facebook (4).png"
+                        alt=""></a></p>
+
+
+        </div>
+        <div class="contact-info" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
+
+            <p style="text-decoration: underline;">Address:</p>
+            <p>65 Union St, Belfast BT1 2JG, United Kingdom</p>
+
+            <p><span style="text-decoration: underline;">Phone number:</span> 0890809809808</p>
+
+
+        </div>
+        <div class="opening-times" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
+
+            <p style="text-decoration: underline;"> Opening hours: </p>
+            <p>Monday - Wednesday: 12PM-12AM </p>
+
+            <p> Thursday - Saturday: 12PM-1AM</p>
+
+            <p> Sunday 1PM-12AM</p>
+
+        </div>
+
+        <div class="logo-footer" style="flex: 1;display: flex;justify-content:center;align-items: center;">
+            <img style="width:35%;opacity: 75%;" src="images/logo.jpg" alt="">
+    
+        </div>
+
+    </div>
+
+
+
+    
+
+    <hr style="    margin: 0;
+    padding:0;">
+    <p class="footer2" style="    width: 100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size:25px; 
+    color:green;
+    align-items: center;"><strong> © The Boxing Hare Pizza 2023, All Right Reserved. Designed By Different
+            Motion.</strong>
+    </p>
+
+
+</footer>
+
+
+
+</html>
+
