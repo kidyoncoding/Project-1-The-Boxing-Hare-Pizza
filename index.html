@@ -1,92 +1,251 @@
 <!DOCTYPE html>
 <html>
 
-<header>
-
-    <title>Pizza</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The BEST Pizza Restaurant in Belfast, England - The Boxing Hare Pizza</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon (1).ico">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
 
-</header>
+        body {
+
+            background-color: black;
+
+        }
+        .logo-pic{
+            height:150px;
+            width: 150px;
+        }
+
+
+        .navbar{
+            justify-content: flex-end;
+        font-size: 55px;
+    }
+
+    .slogan1{
+            font-size: 75px;
+        }
+
+        @media (max-width: 630px) {
+            .logo-navbar{
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar{
+            justify-content: center;
+        }
+    }
+
+        @media (max-width: 480px) {
+            .footer1 {
+                flex-direction: column;
+            }
+
+            .logo-pic {
+
+                height: 100px;
+                width: 100px;
+
+            }
+
+
+        .navbar{
+            justify-content: center;
+        font-size:30px;
+    }
+            }
+
+            .slogan1 {
+                font-size: 70px;
+                margin: auto;
+            }
+
+            .see-menu {
+                font-size: 30px;
+
+            }
+        
+        @media (max-width:360px) {
+            .slogan1{
+                width:100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center;
+        }
+    }
+
+@media (max-width:330px) {
+    .logo-pic {
+
+
+height: 70px;
+width: 70px;
+
+}
+
+
+.navbar{
+justify-content: center;
+flex-wrap: wrap;
+}
+}
+        @media (max-width:222px) {
+          
+            
+            .slogan1{
+            font-size: 55px;
+        }
+            .see-menu{
+                font-size: 30px;
+            }
+        }
+    
+    </style>
+
 
 <body>
     <!-- Start Content -->
+<div style="height:800px;background-image:url('images/background.jpg');background-size: cover;margin:0;padding:0;">
 
 
-
-    <div class="logo-navbar">
-        <div class="logo">
-            <img class="logo-pic" src="images/logo.jpg" />
+    <div class="logo-navbar" style="    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    align-content: center;
+    z-index:2;
+    opacity: 75%;">
+        <div class="logo" style="flex: 1;">
+            <img class="logo-pic" src="images/logo-white.jpg">
         </div>
 
-        <div class="navbar">
-            <a class="button-home" href="home.html">HOME</a>
-            <a class="button-menu" href="menu.html">MENU</a>
-            <a class="button-about" href="about.html">ABOUT</a>
-            <a class="button-contact" href="contact.html">CONTACT</a>
-            <a href="mobile-menu"><img class="threelines-menu" src="images/hamburger (1).png" alt=""></a>
-            
+        <div class="navbar" style="display: flex;
+        background-color: black;
+        align-items: center;
+        flex: 1;
+        position: sticky;
+        right: 0;">
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-home" href="index.html">HOME
+            </a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-menu"
+                href="menu.html">MENU</a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-about"
+                href="about.html">ABOUT</a>
+            <a style="padding: 10px;color: whitesmoke;background-color: black;" class="button-contact"
+                href="contact.html">CONTACT</a>
+
 
         </div>
+
     </div>
 
-    <div class="background">
 
-        <img class="background-pic" src="images/background.jpg">
+    <div class="slogan-seemenu" style="    margin:auto;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top:200px;
+    z-index:1;">
+        <div style="width:35%;margin:auto;text-align:center"><img style="width:75%;opacity: 75%;border-radius: 100%;" src="images/logo-grey-2.jpg" alt=""></div>
+        <div class="slogan1" style="
+    margin:auto;background-color: black; opacity: 75%; 
+    width:fit-content;margin-top:10px;font-size:75px"><span class="slogan1-words" style="color:green">WOOD</span><span class="slogan1-words" style="color:red">FIRED</span><span class="slogan1-words" style="color:white">PIZZA</span></div>
+        <div class="see-menu" style="font-size: 45px;
+        margin:auto;margin-top:10px;
+        background-color: green;
+        color: white;  
+        width:fit-content;" class="see-menu"><a href="menu.html">let see the menu</a></div>
     </div>
-    <div class="slogan-seemenu">
-        <div class="slogan1"><strong><span style="color:red">REAL</span><span style="color:white">ITALIAN</span><span style="color:green">PIZZA</span></strong></div>
-        <div class="see-menu"><a href="">let see the menu</a></div>
-    </div>
+</div>    
 
 </body>
 
 
-<footer>
+<footer style="    color: white;
+font-size: 30px;
+text-align: left;
+background-color:black;">
 
 
-    <div class="footer1">
+    <div class="footer1" style="width: 100%;display: flex;">
 
-        <div class="social-links">
+        <div class="social-links" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
             <p style="text-decoration: underline;">Follow us on Social Media:</p>
 
-            <p><a href="https://www.facebook.com/BoxingHarePizzeria/"><img style="background-color: white; border-radius:12%;width: 40px;" src="images/facebook (4).png" alt=""></a></p>
+            <p><a href="https://www.facebook.com/BoxingHarePizzeria/"><img
+                        style="background-color: white; border-radius:12%;width: 40px;" src="images/facebook (4).png"
+                        alt=""></a></p>
 
 
         </div>
-        <div class="contact-info">
+        <div class="contact-info" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
 
             <p style="text-decoration: underline;">Address:</p>
             <p>65 Union St, Belfast BT1 2JG, United Kingdom</p>
 
             <p><span style="text-decoration: underline;">Phone number:</span> 0890809809808</p>
-        
+
 
         </div>
-        <div class="opening-times">
+        <div class="opening-times" style="    flex: 1;
+        line-height: 1;
+        padding:10px;">
 
-                <p style="text-decoration: underline;"> Opening hours: </p>
-                <p>Monday - Wednesday: 12PM-12AM </p>
+            <p style="text-decoration: underline;"> Opening hours: </p>
+            <p>Monday - Wednesday: 12PM-12AM </p>
 
-                <p> Thursday - Saturday: 12PM-1AM</p>
+            <p> Thursday - Saturday: 12PM-1AM</p>
 
-                <p> Sunday 1PM-12AM</p>
+            <p> Sunday 1PM-12AM</p>
 
         </div>
 
+        <div class="logo-footer" style="flex: 1;display: flex;justify-content:center;align-items: center;">
+            <img style="width:35%;opacity: 75%;" src="images/logo.jpg" alt="">
+    
+        </div>
 
     </div>
 
-    <hr>
-    <p class="footer2"><strong> © The Boxing Hare Pizza 2023, All Right Reserved. Designed By Different Motion.</strong>
+
+
+    
+
+    <hr style="    margin: 0;
+    padding:0;">
+    <p class="footer2" style="    width: 100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size:25px; 
+    color:green;
+    align-items: center;"><strong> © The Boxing Hare Pizza 2023, All Right Reserved. Designed By Different
+            Motion.</strong>
     </p>
 
 
 </footer>
-
-
 </html>
